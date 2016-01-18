@@ -1,0 +1,44 @@
+script names:
+
+addStudent.php
+addQuestion.php
+sendQuestion.php
+selectRaffleWinner.php
+
+// addStudent collects data from forms
+// puts it in the database of students
+
+   addStudent.php
+   
+   field names:
+   first_name
+   last_name
+   student_id
+   e_mail
+   cell_number
+   cell_carrier
+
+
+// addQuestion collects data from forms
+// puts it in the database of questions
+
+   addQuestion.php
+   
+   field names:
+   question
+   answer
+   
+//sendQustion Gather names and cell number or email address
+//and mails out a test question.
+
+   sendQuestion.php
+
+//SelectRaffleWinner
+//Looks in database of students, finds the winner.
+//Not sure how though
+
+
+   selectRaffleWinner.php
+
+
+/********************DATA BASE INFO *****************************/

@@ -1,0 +1,258 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  margin: 0px;
+  border: 0px;
+}
+
+#gameArea {
+  width: 320px;
+  height: 460px;
+  font-size: 20px;
+  padding: 1%;
+  font-family: "Arial";
+  background-color: black;
+  position: absolute;
+  overflow: hidden;
+  left: 50%;
+  top: 50%; }
+
+.siteContent {
+  background-color: #ffe066;
+  top: 0;
+  bottom: 0;
+  overflow: scroll; }
+
+#gameCanvas {
+  left: 100%;
+  top: 100%;
+  display: "block"; }
+
+.adminPuzzleButtons {
+  display: none; }
+
+#homePage {
+  display: "none";
+  width: 100%;
+  height: 100%;
+  font-size: .75em; }
+
+#logo {
+  width: 100%;
+  height: 19%;
+  margin: auto; }
+
+#homePic {
+  width: 100%;
+  top: 36%;
+  margin: auto; }
+
+#homepagePictureFrame {
+  border-top: 2px solid black; }
+
+#menu {
+  z-index: 1000000;
+  list-style-type: none;
+  display: none;
+  position: absolute;
+  margin: 0 auto;
+  height: 80%;
+  width: 98%;
+  top: 19%; }
+
+td, th {
+  text-align: left;
+  color: #FFFFFF; }
+
+ul {
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-padding-start: 0px; }
+
+p {
+  display: block;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px; }
+
+.body {
+  font-size: 100%; }
+
+.menuli {
+  background-color: #ffe066;
+  background-image: none;
+  border-top: none;
+  color: #black;
+  font-size: 1.7em;
+  padding: .3em;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: .4em;
+  vertical-align: middle; }
+
+.menuli:after {
+  /* Main div for border to extend to 50% from bottom left corner */
+  content: "";
+  background: #ff0000;
+  position: absolute;
+  left: 44%;
+  width: 10%;
+  height: .5%;
+  margin-top: 12%; }
+
+#img {
+  width: 100%;
+  height: auto; }
+
+#playTangrams {
+  position: absolute;
+  display: none;
+  border-top: 2px solid black;
+  margin-top: 1%;
+  height: 81%;
+  width: 98%; }
+
+.gameTitleArea {
+  width: 100%;
+  height: 19%;
+  color: #FFF;
+  background-color: black;
+  position: absolute;
+  text-align: center; }
+
+.gameTitleHeading {
+  margin-top: 3%;
+  font-size: 1.4em; }
+
+.gameTitle {
+  font-size: 2em; }
+
+#playbuttonarea {
+  position: absolute;
+  display: none;
+  width: 98%;
+  height: 57%;
+  top: 30%;
+  margin: 0 auto; }
+
+#playbutton {
+  position: absolute;
+  width: auto;
+  margin: 0 auto; }
+
+#shows {
+  display: none;
+  position: absolute;
+  width: 98%;
+  top: 19%;
+  height: 27%;
+  background-color: rgba(0, 0, 0, 0.8); }
+
+#showsTable {
+  width: 100%; }
+
+#addShowButton {
+  display: none; }
+
+.showsHeading {
+  position: absolute;
+  width: 98%;
+  height: 10%; }
+
+.detailsContainer {
+  border: 1px solid white;
+  padding-left: 1em;
+  padding-right: 1em; }
+
+input[type=checkbox] {
+  -webkit-appearance: checkbox; }
+
+#addShowButton {
+  position: absolute;
+  top: 75%; }
+
+.showsHeadingText {
+  vertical-align: left;
+  font-size: 1em;
+  color: #ffffff; }
+
+.showVenueLink {
+  color: #ffffff; }
+
+#addShows {
+  position: absolute;
+  display: none;
+  width: 98%;
+  top: 20%;
+  left: 5%;
+  height: 100%;
+  background-color: #FCF7E3; }
+
+.addShowsInput {
+  position: absolute;
+  font-size: 1.4em;
+  top: 3%;
+  left: 4%; }
+
+.gradient {
+  background: -moz-linear-gradient(top, #3E3E50, black);
+  background: -webkit-linear-gradient(top, #ffd01a, #ffe066);
+  background: -ms-linear-gradient(top, #3E3E50, black);
+  background: -o-linear-gradient(top, #3E3E50, black);
+  background: linear-gradient(to bottom, top, #3E3E50, black); }
+
+#belowHomePic {
+  height: 50%; }
+
+#booking {
+  display: none;
+  position: absolute;
+  width: 98%;
+  height: 27%;
+  top: 19%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #FFFFFF; }
+
+#press {
+  display: none;
+  position: absolute;
+  width: 98%;
+  top: 19%;
+  height: 80%;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: scroll; }
+
+#pressText {
+  margin: 1em;
+  color: #FFF;
+  height: 100%; }
+
+#theBand {
+  display: none;
+  position: absolute;
+  width: 98%;
+  top: 19%;
+  height: 80%;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: scroll; }
+
+#theBandText {
+  margin: 1em;
+  color: #FFF; }
+
+.bookingText {
+  margin: 5%; }
+
+#adminLogin {
+  display: none;
+  margin: 20%;
+  text-align: center; }
+
+#centeredForm {
+  margin-left: 26%;
+  width: 25%; }
+
+/*# sourceMappingURL=tangrams.css.map */

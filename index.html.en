@@ -1,0 +1,148 @@
+
+<!-- Just edited this saved from url=(0040)http://westcoasttubeworks.com/index.html -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--meta name="viewport" content="width=device-width"-->
+<meta name="viewport" content="user-scalable=0, initial-scale=1">
+
+
+<!-- Stylesheet -->
+<link rel="stylesheet" type="text/css" href="HHM/tangramsGame/tangrams.css">
+
+<!-- Javascript -->
+<script src="HHM/tangramsGame/adminLogin.js"></script>
+<script src="HHM/tangramsGame/coordinate.js"></script>
+<script src="HHM/tangramsGame/events.js"></script>
+<script src="HHM/tangramsGame/gameBoard.js"></script>
+<script src="HHM/tangramsGame/gamePiece.js"></script>
+<script src="HHM/tangramsGame/gamePuzzle.js"></script>
+<script src="HHM/tangramsGame/gameTray.js"></script>
+<script src="HHM/tangramsGame/gameTrayItem.js"></script>
+<script src="HHM/tangramsGame/resize.js"></script>
+<script src="HHM/tangramsGame/sounds.js"></script>
+<script src="HHM/tangramsGame/tangrams.js"></script>
+<script src="HHM/tangramsGame/titlescreen.js"></script>
+<script src="HHM/tangramsGame/upcomingShow.js"></script>
+<script src="HHM/tangramsGame/webpage.js"></script>
+</head>
+    <body>
+        <div id="gameArea" style="width: 169px; height: 242.938px; margin-left: -84.5px; margin-top: -121.469px; padding: 1%;">
+            <div class="siteContent">
+            <button id="generatePuzzle" class="adminPuzzleButtons"> create puzzle </button>
+            <button id="nextPuzzle" class="adminPuzzleButtons"> show next puzzle </button>
+            <button id="deletePuzzle" class="adminPuzzleButtons"> delete this puzzle </button>
+            <canvas id="gameCanvas" width="169" height="242" style="display: none;">
+                Your browser does not support the canvas element, sorry.
+            </canvas>
+
+            <div id="homePage">
+                <div id="logo">
+                    <img id="img" src="HHM/tangramsGame/sprites/VanSticker600x270.png">
+                </div>
+                <div id="menu">
+                    <ul class="menu">
+                        <li id="menuShows" class="menuli"> Shows </li>
+                        <li id="menuBooking" class="menuli"> Booking </li>
+                        <li id="menuBand" class="menuli"> About </li>
+                        <li id="menuPlay" class="menuli"> Play </li>
+                        <li class="menuli"> Audio </li>
+                        <li class="menuli"> Video </li>
+                        <li id="menuPress" class="menuli"> Press </li>
+                    </ul>
+                </div>
+                <div id="home" style="display: block;">
+                    <div id="homepagePictureFrame">
+                        <img id="homePic" src="HHM/tangramsGame/sprites/beach_homepage.jpg" ;="">
+                    </div>
+                    <div id="belowHomePic" class="gradient"></div>
+                </div>
+                <div id="theBand">
+                    <div id="theBandText">
+                        <h5>CARRYING SOUL MUSIC UNDER A NEW LIGHT </h5>
+                        <p>
+                        Harry and the Hitmen serve up classic Motown and Soul with jovial professionalism. But don't let the "suits" fool you, the band comes from an improvised rock tradition, and has years of experimentation behind their tight arrangements. Unearthing gems from the golden years of Motown and Stax records, the group curates a unique set for every show. And because all six members are multi-instrumentalists and avid improvisers, their concerts continue to evolve nightly. Perfectly suited for weddings, music halls, and festivals, Harry and the Hitmen will deliver a one-of-a-kind dance party wherever needed.
+                        </p>
+                        <h4> Nick Gyorkos:     vocals, bass trombone, soprano trombone </h4>
+                        <h4> Scott Makson:     vocals, keyboards, trumput </h4>
+                        <h4> Ryan Morgan:      vocals, tambourine, trombone, harmonica, and more </h4>
+                        <h4> Harrison Murphy:  drums </h4>
+                        <h4> Rolf Sandmeyer:   vocals, guitar, keyboards </h4>
+                        <h4> Jesse Towes:      vocals, bass</h4>
+                    </div>
+                </div>
+                <div id="playTangrams">
+                    <div class="gameTitleArea">
+                        <div class="gameTitleHeading">
+                            Presents...
+                            <div class="gameTitle">
+                                Tangrams
+                            </div>
+                        </div>
+                    </div>
+                    <div id="playbuttonarea">
+                        <div id="playbutton">
+                            <img id="img" src="HHM/tangramsGame/sprites/playbutton.png">
+                        </div>
+                    </div>
+                </div>
+                <div id="addShows">
+
+                </div>
+                <div id="shows">
+                    <table id="showsTable"> </table>
+
+                </div>
+                <div id="booking">
+                    <div class="bookingText">
+                        Please direct all booking inquires to booking@harryandthehitmen.com.
+                    </div>
+                </div>
+                <div id="press">
+                    <div id="pressText">
+                        <h5>Santa Cruz Weekly, 10/27/2010</h5>
+                        <p>
+                        The dapper dons in Harry and the Hitmen turn out psychedelic-inflected classic soul music with the verve and style of the greats. Unapologetic throwbacks, the members of the band unearth dusty Motown grooves and inject some interstellar jam-band flights of fancy. Harry and the Hitmen bring a bit of much-needed spectacle to Santa Cruz stages, employing their own lighting designer and engaging in heavily produced and choreographed sets. It’s a refreshing sight to see some local boys abandon the Santa Cruz tuxedo (hoodies and Converse) for something a bit more refined and classic.
+                        </p>
+                        <h5>Good Times, 12/29/2009</h5>
+                        <p>
+                        …pull off more than enough soul to make a skeptic do a double-take.
+                        </p>
+                        <h5> Santa Cruz Sentinel, 10/26/2012 </h5>
+                        <p>
+                        Popular Santa Cruz band Harry and the Hitmen …. bringing along their psychedelic sound with West Coast roots. The group is known for their lighting design and choreographed shows, creating a show that promises to entertain.
+                        </p>
+                        <p>
+                        </p><h5>Monterey County Weekly, 8/14/2010</h5>
+                        <p>
+                        Harry and the Hit Men combine Motown with some improv beats to create what some call Psychedelic Rock … with experimental grooves creating a sound that is all their own.
+
+                        </p>
+                    </div>
+                </div>
+                <div id="adminLogin">
+                    <h3> Please enter your username and password to get backstage</h3>
+                    <div id="centeredForm">
+                        <form name="adminLoginForm">
+                            Username: <br>
+                            <input type="text" name="username">
+                            <br>
+                            Password:
+                            <br>
+                            <input type="password" name="password">
+                            <br>
+                            <br>
+                            <button id="adminLoginSubmitButton"> Login</button>
+                        </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <script> window.onload = main;</script>
+
+
+        </div>
+
+
+</body></html>

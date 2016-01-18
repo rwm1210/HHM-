@@ -1,0 +1,96 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		C3CE8BCE1B0BED6C00347BDF /* gamePiece.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = gamePiece.js; sourceTree = "<group>"; };
+		C3CE8BCF1B0BEF8E00347BDF /* tangrams.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = tangrams.css; sourceTree = "<group>"; };
+		C3CE8BD01B0BEF8E00347BDF /* tangrams.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = tangrams.js; sourceTree = "<group>"; };
+		C3CE8BD21B0BF73C00347BDF /* gameTray.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = gameTray.js; sourceTree = "<group>"; };
+		C3CE8BD31B0BF76400347BDF /* gameBoard.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = gameBoard.js; sourceTree = "<group>"; };
+		C3CE8BD41B0BF95F00347BDF /* titlescreen.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = titlescreen.js; sourceTree = "<group>"; };
+		C3CE8BD51B0BFC2B00347BDF /* resize.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = resize.js; sourceTree = "<group>"; };
+		C3CE8BD91B0D1D8F00347BDF /* events.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = events.js; sourceTree = "<group>"; };
+		C3CE8BDD1B0E8B6600347BDF /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = index.html; path = ../../index.html; sourceTree = "<group>"; };
+		C3CE8BDE1B0E9B8300347BDF /* gamePuzzle.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = gamePuzzle.js; sourceTree = "<group>"; };
+		C3CE8BDF1B0F000B00347BDF /* gameTrayItem.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = gameTrayItem.js; sourceTree = "<group>"; };
+		C3CE8BE31B1278AB00347BDF /* coordinate.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = coordinate.js; sourceTree = "<group>"; };
+		C3CE8BE41B1667C900347BDF /* sounds.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = sounds.js; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		C34C686B1B0BEB150046F0CE = {
+			isa = PBXGroup;
+			children = (
+				C3CE8BE41B1667C900347BDF /* sounds.js */,
+				C3CE8BE31B1278AB00347BDF /* coordinate.js */,
+				C3CE8BDF1B0F000B00347BDF /* gameTrayItem.js */,
+				C3CE8BDD1B0E8B6600347BDF /* index.html */,
+				C3CE8BD51B0BFC2B00347BDF /* resize.js */,
+				C3CE8BD41B0BF95F00347BDF /* titlescreen.js */,
+				C3CE8BD31B0BF76400347BDF /* gameBoard.js */,
+				C3CE8BDE1B0E9B8300347BDF /* gamePuzzle.js */,
+				C3CE8BD21B0BF73C00347BDF /* gameTray.js */,
+				C3CE8BCF1B0BEF8E00347BDF /* tangrams.css */,
+				C3CE8BD01B0BEF8E00347BDF /* tangrams.js */,
+				C3CE8BCE1B0BED6C00347BDF /* gamePiece.js */,
+				C3CE8BD91B0D1D8F00347BDF /* events.js */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		C34C686C1B0BEB150046F0CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+			};
+			buildConfigurationList = C34C686F1B0BEB150046F0CE /* Build configuration list for PBXProject "tangramsGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C34C686B1B0BEB150046F0CE;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		C34C68701B0BEB150046F0CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		C34C68711B0BEB150046F0CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C34C686F1B0BEB150046F0CE /* Build configuration list for PBXProject "tangramsGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C34C68701B0BEB150046F0CE /* Debug */,
+				C34C68711B0BEB150046F0CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C34C686C1B0BEB150046F0CE /* Project object */;
+}
