@@ -11,10 +11,10 @@ function initEvents(newGameBoard)
 {
     var el = document.getElementsByTagName("canvas")[0];
     game = newGameBoard;
-  
-    
-   
-    
+
+
+
+
     // Tangrams game events
     el.addEventListener("touchstart", handleStart, false);
     el.addEventListener("touchend", handleEnd, false);
@@ -24,51 +24,54 @@ function initEvents(newGameBoard)
     el.addEventListener("mousemove", handleMousemove,false);
     el.addEventListener("mousedown", handleMousedown,false);
     el.addEventListener("mouseup", handleMouseup,false);
-    
 
-   
+
+
     var storeButton = document.getElementById("generatePuzzle");
     var retrieveButton = document.getElementById("retrievePuzzle");
     var nextButton = document.getElementById("nextPuzzle");
     var deleteButton = document.getElementById("deletePuzzle");
-    
+
     //storeButton.addEventListener("click", storePuzzle,false);
     //nextButton.addEventListener("click", nextPuzzle, false);
     //deleteButton.addEventListener("click", deletePuzzle, false);
-    
+
     // main menu of homepage
+/*
     var menuButton = document.getElementById("logo");
     menuButton.addEventListener("click", showMenu, false);
-    
+*/
+
     // main menu items
     var booking = document.getElementById("menuBooking");
     booking.addEventListener("click", showBooking, false);
-    
+
     var menuItemPlay = document.getElementById("menuPlay");
     menuItemPlay.addEventListener("click", tangramsMenu, false);
-    
+
     var show = document.getElementById("menuShows");
     show.addEventListener("click", showShows, false);
-    
-    var press = document.getElementById("menuPress");
+
+    /*var press = document.getElementById("menuPress");
     press.addEventListener("click", showPress, false);
+    */
     
     var band = document.getElementById("menuBand");
     band.addEventListener("click", showTheBand, false);
     // Upcoming shows page
-    
+
     // for starting the game
     var playButton = document.getElementById("playbutton");
     playButton.addEventListener("click",play, false);
-    
+
 
     var adminLoginSubmit = document.getElementById("adminLoginSubmitButton");
     adminLoginSubmit.addEventListener("click",submitAdminCredentials,false);
-    
- 
-    
+
+
+
     //retrieveButton.addEventListener("click", retrievePuzzle);
-    //window.addEventListener("resize", resizeGame, false);
+    //window.addEventListener("resize", fitToScreen, false);
     //window.addEventListener("orientationchange", resizeGameHandler, false);
 
     //audio.play();
@@ -79,8 +82,8 @@ function initEvents(newGameBoard)
     var cursor = new coordinate(0,0);
     var clickOrDrag = 0;
     //var screenScale = 1;
-    
-    
+
+
     function handleMousedown(evt)
     {
         evt.preventDefault();
@@ -92,7 +95,7 @@ function initEvents(newGameBoard)
             eventInProgress = false;
         }
     }
-    
+
     function handleMouseup(evt)
     {
         //console.log("click or drag = "+ clickOrDrag);
@@ -104,8 +107,8 @@ function initEvents(newGameBoard)
             eventInProgress = false;
         }
     }
-    
-    
+
+
     function handleMousemove(evt)
     {
         var offset = findPos(el);
@@ -120,7 +123,7 @@ function initEvents(newGameBoard)
             eventInProgress = false;
         }
     }
-    
+
     function handleStart(evt)
     {
         evt.preventDefault();
@@ -130,7 +133,7 @@ function initEvents(newGameBoard)
         cursor.x = touches[0].clientX-offset.x;
         cursor.y = touches[0].clientY-offset.y;
         clickOrDrag = 0;
-        
+
         if(!eventInProgress)
         {
             eventInProgress = true;
@@ -138,8 +141,8 @@ function initEvents(newGameBoard)
             eventInProgress = false;
         }
     }
-    
-    
+
+
     function handleMove(evt)
     {
         evt.preventDefault();
@@ -149,7 +152,7 @@ function initEvents(newGameBoard)
         clickOrDrag = 1;
         cursor.x = touches[0].clientX-offset.x;
         cursor.y = touches[0].clientY-offset.y;
-        
+
         if(!eventInProgress)
         {
             eventInProgress = true;
@@ -157,8 +160,8 @@ function initEvents(newGameBoard)
             eventInProgress = false;
         }
     }
-    
-    
+
+
     function handleEnd(evt)
     {
         if(!eventInProgress)
@@ -168,7 +171,7 @@ function initEvents(newGameBoard)
             clickOrDraw =0;
             eventInProgress = false;
         }}
-    
+
     function handleCancel(evt)
     {
         if(!eventInProgress)
@@ -179,21 +182,20 @@ function initEvents(newGameBoard)
             eventInProgress = false;
         }
     }
-    
+
     function findPos (obj)
     {
         var curleft = 0,
         curtop = 0;
-        
+
         if (obj.offsetParent) {
             do {
                 curleft += obj.offsetLeft;
                 curtop += obj.offsetTop;
-                
+
             } while (obj = obj.offsetParent);
-            
+
             return {x: curleft-document.body.scrollLeft, y: curtop-document.body.scrollTop};
         }
     }
 }
-

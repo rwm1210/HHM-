@@ -9,9 +9,10 @@
 var showsLoaded = false;
 var pageVisited = false;
 var shows = null;
-var authenticated = true;false;
-
-
+var authenticated = false;
+var screenScale = 1;
+var resizeInit = true;
+var originalFontSize=0;
 // buttons for adding/removing/creating puzzles
 
 //
@@ -52,6 +53,10 @@ function clearAddShowForm()
     // Also, sort shows in display, somehow...
 }
 
+function hideGameArea(){
+  var gameArea = document.getElementById("gameArea");
+  gameArea.style.display = "none";
+}
 
 function showAddShowButton()
 {
@@ -238,6 +243,7 @@ function hideTangramsMenu()
 
 function showMenu()
 {
+  /*
     var menuEl = document.getElementById("menu");
     var state = menuEl.style.display;
 
@@ -248,12 +254,16 @@ function showMenu()
     }else if (state === "none"){
         menuEl.style.display = "block";
     }
+    */
+
 }
 
 function hideMenu()
 {
+/*
     var menuEl = document.getElementById("menu");
     menuEl.style.display = "none";
+  */
 }
 
 
@@ -267,23 +277,46 @@ function buildPage()
 {
 
     var screenScale = fitToScreen();
-    //console.log("screen scale" + screenScale);
+    //.log("screen scale" + screenScale);
 
     game = buildGameBoard(screenScale); // reset to screenScale once puzzle is built
     initEvents(game);
-
-    /*if(!pageVisited){
+    $(document).ready(function(){
+      // run test on inital page load
+      fixNavbar();
+      // run test on resize of the window
+      $(window).resize(fixNavbar);
+    });
+    if(!pageVisited){
         showCanvas();
-        runIntro(showHomePage);
+      //  runIntro(showHomePage);
     }else{
         showHomePage();
 
     }
-    */
+
+}
+/* Code adapted from https://www.fourfront.us/blog/jquery-window-width-and-media-queries
+remove the data-toggle="collapse" when the screen menu isn't collapsed*/
+function fixNavbar(){
+  if ($(".navbar-nav").css("float") == "right"){
+    $('#menuShows').attr("data-toggle","none");
+    $('#menuBooking').attr("data-toggle","none");
+    $('#menuBand').attr("data-toggle","none");
+    $('#menuPlay').attr("data-toggle","none");
+    $('#menuPress').attr("data-toggle","none");
+  }else{
+    $("#menuShows").attr("data-toggle","collapse");
+    $('#menuBooking').attr("data-toggle","collapse");
+    $('#menuBand').attr("data-toggle","collapse");
+    $('#menuPlay').attr("data-toggle","collapse");
+    $('#menuPress').attr("data-toggle","collapse");
+  }
 }
 
 function main()
 {
     buildPage();
+    //hideGameArea();
 
 }

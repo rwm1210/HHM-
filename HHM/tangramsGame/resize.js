@@ -11,6 +11,7 @@ function fitToScreen()
     var newHeight = window.innerHeight;
     var newWidthToHeight = newWidth / newHeight;
     var newScreenScale = 0;
+    var fontSizeHolder = 0;
 
     // case 1 window is to wide
     if(newWidthToHeight > widthToHeight){
@@ -25,13 +26,21 @@ function fitToScreen()
         gameArea.style.height = newHeight + "px";
     }
 
+
     gameArea.style.marginLeft = (-newWidth/2) + "px";
     gameArea.style.marginTop = (-newHeight/2) + "px";
     gameArea.style.padding = newWidth/100;
 
 
     newScreenScale = newWidth/320;
-    gameArea.style.fontSize = (parseInt(window.getComputedStyle(gameArea).getPropertyValue("font-size"))*newScreenScale);
+
+    fontSizeHolder = parseInt(window.getComputedStyle(gameArea).getPropertyValue("font-size"));
+    if(resizeInit){
+      originalFontSize= fontSizeHolder;
+      resizeInit=0;
+    }
+
+    gameArea.style.fontSize = originalFontSize * newScreenScale;
     //newWidth = Math.floor(newWidth);
     //newHeight = Math.floor(newHeight);
 
